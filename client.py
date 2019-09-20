@@ -26,7 +26,7 @@ class NovaPhoshtaWayBill():
 
         WayBill = client.factory.create('ns1:WayBillRef')
 
-        WayBill.GUID = id
+        WayBill.GUID = id # id returned from NewWayBill method
         WayBill.Barcode = ''
         WayBill.Date = '2019-06-16T14:59:33'
         WayBill.Total = 0

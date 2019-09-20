@@ -17,7 +17,7 @@ class NovaPhoshtaWayBill():
                         location='http://188.93.95.234:8081/CabinetAPI/ws/cabinetAPI1_1.1cws',
                         username='testuser', password='123456789', doctor=doctor, timeout=5)
 
-        sender_id = '' GUID for sender 
+        sender_id = '' #GUID for sender 
         sender_address = 'თბილისი'
         sender_city_id = '5f955257-132f-11e5-80d3-00155d3cd455'
         sender_address_id = 'c2fafd7d-b853-11e9-80cf-00155d5fea08'

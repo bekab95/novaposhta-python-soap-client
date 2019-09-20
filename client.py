@@ -8,7 +8,7 @@ class NovaPhoshtaWayBill():
 
     
 
-    def WayBill(self, id, total, receiver_name, receiver_city_id, receiver_address, receiver_phone, weight, attribute_set_name, comment, order_id, is_express):
+    def WayBill(self, id, total, receiver_name, receiver_city_id, receiver_address, receiver_phone, weight, product_description, comment, order_id, is_express):
         imp1 = Import('http://v8.1c.ru/8.1/data/core')
         doctor = ImportDoctor(imp1)
 
@@ -90,7 +90,7 @@ class NovaPhoshtaWayBill():
         KindOfService = 0 # door to door
         WayBill.KindOfService = KindOfService
 
-        WayBill.CargoDescription = attribute_set_name
+        WayBill.CargoDescription = product_description
 
         #PayForm = self.client.factory.create('tns:KindOfPay')
         PayForm = 0 # fixed
